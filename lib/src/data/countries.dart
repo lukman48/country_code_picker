@@ -1,4 +1,6 @@
 /// Comprehensive list of 250+ countries with flags, codes, and phone formats
+import '../models.dart';
+
 final countryList = [
   Country(code: 'US', name: 'United States', flag: '🇺🇸', dialCode: '+1', phoneFormat: '+1 (XXX) XXX-XXXX', region: 'Americas'),
   Country(code: 'CA', name: 'Canada', flag: '🇨🇦', dialCode: '+1', phoneFormat: '+1 (XXX) XXX-XXXX', region: 'Americas'),
@@ -44,15 +46,25 @@ final countryList = [
 
 /// Extension for easier country lookups
 extension CountryListUtils on List<Country> {
-  Country? byCode(String code) => firstWhere(
-    (c) => c.code.toUpperCase() == code.toUpperCase(),
-    orElse: () => null as Country,
-  );
+  Country? byCode(String code) {
+    try {
+      return firstWhere(
+        (c) => c.code.toUpperCase() == code.toUpperCase(),
+      );
+    } catch (e) {
+      return null;
+    }
+  }
   
-  Country? byDialCode(String dialCode) => firstWhere(
-    (c) => c.dialCode == dialCode,
-    orElse: () => null as Country,
-  );
+  Country? byDialCode(String dialCode) {
+    try {
+      return firstWhere(
+        (c) => c.dialCode == dialCode,
+      );
+    } catch (e) {
+      return null;
+    }
+  }
   
   List<Country> search(String query) {
     if (query.isEmpty) return this;

@@ -228,7 +228,7 @@ class _CountryPickerDialogState extends State<_CountryPickerDialog> {
                     return Material(
                       color: isSelected
                           ? (widget.primaryColor ?? Theme.of(context).primaryColor)
-                              .withOpacity(0.1)
+                              .withValues(alpha: 0.1)
                           : Colors.transparent,
                       child: ListTile(
                         leading: Text(
