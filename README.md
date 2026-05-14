@@ -43,7 +43,14 @@ CountryCodePicker(
 )
 ```
 
-## 📚 Usage Examples
+## 📚 Documentation
+
+### 🎯 Quick Start
+- **[Quick Reference Card](QUICK_REFERENCE.md)** - Most common patterns at a glance
+- **[Complete Examples](EXAMPLE.md)** - Real-world usage scenarios
+- **[Visual Guide](VISUAL_GUIDE.md)** - UI/UX layouts and design details
+
+## 💻 Usage Examples
 
 ### Basic Usage
 
@@ -270,6 +277,16 @@ MaterialApp(
 )
 ```
 
+## 📖 Complete Documentation
+
+For more detailed information, see:
+
+- **[QUICK_REFERENCE.md](QUICK_REFERENCE.md)** - Quick reference card with common patterns
+- **[EXAMPLE.md](EXAMPLE.md)** - 6+ complete working examples
+- **[VISUAL_GUIDE.md](VISUAL_GUIDE.md)** - UI/UX design guide with ASCII diagrams
+- **[CONTRIBUTING.md](CONTRIBUTING.md)** - How to contribute
+- **[CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)** - Community standards
+
 ## ♿ Accessibility
 
 - Full keyboard navigation
@@ -314,6 +331,14 @@ See [CHANGELOG.md](CHANGELOG.md) for version history.
 ## 🤝 Contributing
 
 Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## 📚 Learn More
+
+- 🚀 **[Quick Reference](QUICK_REFERENCE.md)** - Common patterns
+- 📖 **[Full Examples](EXAMPLE.md)** - Real-world use cases  
+- 🎨 **[Visual Design](VISUAL_GUIDE.md)** - UI/UX details
+- 🤝 **[Contributing](CONTRIBUTING.md)** - Help improve this package
+- 📋 **[Code of Conduct](CODE_OF_CONDUCT.md)** - Community guidelines
 
 ## 📄 License
 
@@ -378,5 +403,13 @@ if (country != null) {
 ✅ **Performant** - Optimized for speed and memory  
 
 ---
+
+---
+
+**📚 Start with:**
+1. [Quick Reference](QUICK_REFERENCE.md) for quick patterns
+2. [Examples](EXAMPLE.md) for real-world code
+3. [Visual Guide](VISUAL_GUIDE.md) for design details
+4. [README](README.md) for comprehensive overview
 
 Made with ❤️ for the Flutter community
