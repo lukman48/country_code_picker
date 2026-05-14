@@ -1,4 +1,4 @@
-library country_picker;
+library flutter_country_picker;
 
 export 'src/models.dart';
 export 'src/widgets/country_picker.dart';

@@ -1,6 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:country_picker/country_picker.dart';
-
+import 'package:flutter_country_picker/flutter_country_picker.dart';
 void main() {
   group('Country Model Tests', () {
     test('Country equality', () {

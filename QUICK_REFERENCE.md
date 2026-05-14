@@ -4,7 +4,7 @@
 
 | Feature | Details |
 |---------|---------|
-| **Package Name** | `country_picker` |
+| **Package Name** | `flutter_country_picker` |
 | **Version** | `1.0.0` |
 | **Flutter Support** | 3.10.0+ |
 | **Dart Support** | 3.0.0+ |
@@ -19,11 +19,11 @@
 
 ```yaml
 dependencies:
-  country_picker: ^1.0.0
+  flutter_country_picker: ^1.0.0
 ```
 
 ```bash
-flutter pub add country_picker
+flutter pub add flutter_country_picker
 ```
 
 ---
@@ -31,7 +31,7 @@ flutter pub add country_picker
 ## 💻 **Basic Usage - 3 Lines**
 
 ```dart
-import 'package:country_picker/country_picker.dart';
+import 'package:flutter_country_picker/flutter_country_picker.dart';
 
 CountryPicker(
   onCountrySelected: (country) => print(country.country.name),
@@ -189,7 +189,7 @@ CountryPicker(
 
 ```dart
 import 'package:flutter/material.dart';
-import 'package:country_picker/country_picker.dart';
+import 'package:flutter_country_picker/flutter_country_picker.dart';
 
 void main() => runApp(const MyApp());
 
@@ -261,7 +261,7 @@ class _PhoneFormState extends State<PhoneForm> {
 
 ```dart
 import 'package:flutter_test/flutter_test.dart';
-import 'package:country_picker/country_picker.dart';
+import 'package:flutter_country_picker/flutter_country_picker.dart';
 
 void main() {
   group('Country Picker Tests', () {
@@ -291,11 +291,11 @@ void main() {
 
 | Resource | Link |
 |----------|------|
-| **Package** | https://pub.dev/packages/country_picker |
-| **GitHub** | https://github.com/lukman48/country_picker |
+| **Package** | https://pub.dev/packages/flutter_country_picker |
+| **GitHub** | https://github.com/lukman48/flutter_country_picker |
 | **Examples** | [EXAMPLE.md](EXAMPLE.md) |
 | **Visual Guide** | [VISUAL_GUIDE.md](VISUAL_GUIDE.md) |
-| **Issues** | https://github.com/lukman48/country_picker/issues |
+| **Issues** | https://github.com/lukman48/flutter_country_picker/issues |
 
 ---
 
@@ -384,7 +384,7 @@ Text('${selectedCountry.flag} ${selectedCountry.dialCode}');
 - 📖 Read the [README.md](README.md)
 - 📚 Check [EXAMPLE.md](EXAMPLE.md)
 - 🎨 View [VISUAL_GUIDE.md](VISUAL_GUIDE.md)
-- 🐛 Report on [GitHub Issues](https://github.com/lukman48/country_picker/issues)
+- 🐛 Report on [GitHub Issues](https://github.com/lukman48/flutter_country_picker/issues)
 - 💡 Check existing issues for solutions
 
 ---

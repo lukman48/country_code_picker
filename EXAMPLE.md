@@ -1,6 +1,6 @@
-# Examples - country_picker
+# Examples - flutter_country_picker
 
-Complete examples showing how to use the country_picker package in real-world scenarios.
+Complete examples showing how to use the flutter_country_picker package in real-world scenarios.
 
 ## 📱 Basic Usage
 
@@ -8,7 +8,7 @@ Complete examples showing how to use the country_picker package in real-world sc
 
 ```dart
 import 'package:flutter/material.dart';
-import 'package:country_picker/country_picker.dart';
+import 'package:flutter_country_picker/flutter_country_picker.dart';
 
 void main() {
   runApp(const MyApp());
@@ -106,7 +106,7 @@ class _CountryPickerExampleState extends State<CountryPickerExample> {
 
 ```dart
 import 'package:flutter/material.dart';
-import 'package:country_picker/country_picker.dart';
+import 'package:flutter_country_picker/flutter_country_picker.dart';
 
 class PhoneInputForm extends StatefulWidget {
   const PhoneInputForm({Key? key}) : super(key: key);
@@ -223,7 +223,7 @@ class _PhoneInputFormState extends State<PhoneInputForm> {
 
 ```dart
 import 'package:flutter/material.dart';
-import 'package:country_picker/country_picker.dart';
+import 'package:flutter_country_picker/flutter_country_picker.dart';
 
 class ThemedCountryPicker extends StatefulWidget {
   const ThemedCountryPicker({Key? key}) : super(key: key);
@@ -303,7 +303,7 @@ class _ThemedCountryPickerState extends State<ThemedCountryPicker> {
 
 ```dart
 import 'package:flutter/material.dart';
-import 'package:country_picker/country_picker.dart';
+import 'package:flutter_country_picker/flutter_country_picker.dart';
 
 class SearchExample extends StatefulWidget {
   const SearchExample({Key? key}) : super(key: key);
@@ -417,7 +417,7 @@ class _SearchExampleState extends State<SearchExample> {
 
 ```dart
 import 'package:flutter/material.dart';
-import 'package:country_picker/country_picker.dart';
+import 'package:flutter_country_picker/flutter_country_picker.dart';
 
 class RegionFilterExample extends StatefulWidget {
   const RegionFilterExample({Key? key}) : super(key: key);
@@ -507,7 +507,7 @@ class _RegionFilterExampleState extends State<RegionFilterExample> {
 
 ```dart
 import 'package:flutter/material.dart';
-import 'package:country_picker/country_picker.dart';
+import 'package:flutter_country_picker/flutter_country_picker.dart';
 
 void main() {
   runApp(const CompleteExampleApp());
@@ -766,8 +766,8 @@ CountryPicker(
 
 - [Main Package Documentation](README.md)
 - [API Reference](docs/API.md)
-- [GitHub Repository](https://github.com/lukman48/country_picker)
-- [pub.dev Package](https://pub.dev/packages/country_picker)
+- [GitHub Repository](https://github.com/lukman48/flutter_country_picker)
+- [pub.dev Package](https://pub.dev/packages/flutter_country_picker)
 
 ---
 
@@ -776,7 +776,7 @@ CountryPicker(
 Add to your `pubspec.yaml`:
 ```yaml
 dependencies:
-  country_picker: ^1.0.0
+  flutter_country_picker: ^1.0.0
 ```
 
 Then start using it in your app! Happy coding! 🚀

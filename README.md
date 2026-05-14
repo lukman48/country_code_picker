@@ -1,4 +1,4 @@
-# country_picker
+# flutter_country_picker
 
 A beautiful, efficient Flutter widget for selecting country codes with Material 3 design, smooth animations, and excellent UX. Perfect for phone number input forms.
 
@@ -21,7 +21,7 @@ Add to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  country_picker: ^1.0.0
+  flutter_country_picker: ^1.0.0
 ```
 
 Then run:
@@ -32,7 +32,7 @@ flutter pub get
 ## 🚀 Quick Start
 
 ```dart
-import 'package:country_picker/country_picker.dart';
+import 'package:flutter_country_picker/flutter_country_picker.dart';
 
 CountryPicker(
   onCountrySelected: (country) {
@@ -346,9 +346,9 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 ## 🔗 Resources
 
-- [GitHub Repository](https://github.com/lukman48/country_picker)
-- [pub.dev Package](https://pub.dev/packages/country_picker)
-- [Issue Tracker](https://github.com/lukman48/country_picker/issues)
+- [GitHub Repository](https://github.com/lukman48/flutter_country_picker)
+- [pub.dev Package](https://pub.dev/packages/flutter_country_picker)
+- [Issue Tracker](https://github.com/lukman48/flutter_country_picker/issues)
 
 ## 💡 Tips & Tricks
 
