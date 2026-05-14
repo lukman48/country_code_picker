@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:country_code_picker/country_code_picker.dart';
+import 'package:country_picker/country_picker.dart';
 
 void main() {
   group('Country Model Tests', () {

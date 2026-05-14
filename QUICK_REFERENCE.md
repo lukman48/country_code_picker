@@ -4,7 +4,7 @@
 
 | Feature | Details |
 |---------|---------|
-| **Package Name** | `country_code_picker` |
+| **Package Name** | `country_picker` |
 | **Version** | `1.0.0` |
 | **Flutter Support** | 3.10.0+ |
 | **Dart Support** | 3.0.0+ |
@@ -19,11 +19,11 @@
 
 ```yaml
 dependencies:
-  country_code_picker: ^1.0.0
+  country_picker: ^1.0.0
 ```
 
 ```bash
-flutter pub add country_code_picker
+flutter pub add country_picker
 ```
 
 ---
@@ -31,9 +31,9 @@ flutter pub add country_code_picker
 ## 💻 **Basic Usage - 3 Lines**
 
 ```dart
-import 'package:country_code_picker/country_code_picker.dart';
+import 'package:country_picker/country_picker.dart';
 
-CountryCodePicker(
+CountryPicker(
   onCountrySelected: (country) => print(country.country.name),
 )
 ```
@@ -64,11 +64,11 @@ CountrySelection(
 
 ---
 
-## 🎨 **Widget: CountryCodePicker**
+## 🎨 **Widget: CountryPicker**
 
 ### Constructor
 ```dart
-CountryCodePicker({
+CountryPicker({
   required ValueChanged<CountrySelection> onCountrySelected,
   Country? initialCountry,
   VoidCallback? onDialogOpen,
@@ -83,7 +83,7 @@ CountryCodePicker({
 
 ### Example
 ```dart
-CountryCodePicker(
+CountryPicker(
   onCountrySelected: (selection) {
     print('${selection.country.name}: ${selection.country.dialCode}');
   },
@@ -149,7 +149,7 @@ final regions = countryList.regions;  // List<String>
 
 ### Custom Colors
 ```dart
-CountryCodePicker(
+CountryPicker(
   primaryColor: Colors.purple,
   onCountrySelected: (_) {},
 )
@@ -157,7 +157,7 @@ CountryCodePicker(
 
 ### Custom Text Style
 ```dart
-CountryCodePicker(
+CountryPicker(
   textStyle: TextStyle(
     fontSize: 18,
     fontWeight: FontWeight.bold,
@@ -168,7 +168,7 @@ CountryCodePicker(
 
 ### Custom Button Height
 ```dart
-CountryCodePicker(
+CountryPicker(
   height: 60,
   onCountrySelected: (_) {},
 )
@@ -176,7 +176,7 @@ CountryCodePicker(
 
 ### Disable Features
 ```dart
-CountryCodePicker(
+CountryPicker(
   enableSearch: false,        // Hide search box
   showFlagEmoji: false,       // Hide flag emoji
   onCountrySelected: (_) {},
@@ -189,7 +189,7 @@ CountryCodePicker(
 
 ```dart
 import 'package:flutter/material.dart';
-import 'package:country_code_picker/country_code_picker.dart';
+import 'package:country_picker/country_picker.dart';
 
 void main() => runApp(const MyApp());
 
@@ -231,7 +231,7 @@ class _PhoneFormState extends State<PhoneForm> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             // Country picker
-            CountryCodePicker(
+            CountryPicker(
               onCountrySelected: (selection) {
                 setState(() => selectedCountry = selection.country);
               },
@@ -261,7 +261,7 @@ class _PhoneFormState extends State<PhoneForm> {
 
 ```dart
 import 'package:flutter_test/flutter_test.dart';
-import 'package:country_code_picker/country_code_picker.dart';
+import 'package:country_picker/country_picker.dart';
 
 void main() {
   group('Country Picker Tests', () {
@@ -291,11 +291,11 @@ void main() {
 
 | Resource | Link |
 |----------|------|
-| **Package** | https://pub.dev/packages/country_code_picker |
-| **GitHub** | https://github.com/lukman48/country_code_picker |
+| **Package** | https://pub.dev/packages/country_picker |
+| **GitHub** | https://github.com/lukman48/country_picker |
 | **Examples** | [EXAMPLE.md](EXAMPLE.md) |
 | **Visual Guide** | [VISUAL_GUIDE.md](VISUAL_GUIDE.md) |
-| **Issues** | https://github.com/lukman48/country_code_picker/issues |
+| **Issues** | https://github.com/lukman48/country_picker/issues |
 
 ---
 
@@ -306,7 +306,7 @@ void main() {
 final localeCode = Localizations.localeOf(context).countryCode;
 final initialCountry = countryList.byCode(localeCode ?? 'US');
 
-CountryCodePicker(
+CountryPicker(
   initialCountry: initialCountry,
   onCountrySelected: (_) {},
 )
@@ -351,7 +351,7 @@ Text('${selectedCountry.flag} ${selectedCountry.dialCode}');
 - [ ] Add to pubspec.yaml
 - [ ] Run `flutter pub get`
 - [ ] Import package
-- [ ] Create CountryCodePicker widget
+- [ ] Create CountryPicker widget
 - [ ] Handle onCountrySelected callback
 - [ ] Customize colors/styling (optional)
 - [ ] Test on device
@@ -384,7 +384,7 @@ Text('${selectedCountry.flag} ${selectedCountry.dialCode}');
 - 📖 Read the [README.md](README.md)
 - 📚 Check [EXAMPLE.md](EXAMPLE.md)
 - 🎨 View [VISUAL_GUIDE.md](VISUAL_GUIDE.md)
-- 🐛 Report on [GitHub Issues](https://github.com/lukman48/country_code_picker/issues)
+- 🐛 Report on [GitHub Issues](https://github.com/lukman48/country_picker/issues)
 - 💡 Check existing issues for solutions
 
 ---

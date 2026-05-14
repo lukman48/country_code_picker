@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import '../models.dart';
 import '../data/countries.dart';
 
-/// Main country code picker button widget
-class CountryCodePicker extends StatefulWidget {
+/// Main country picker button widget
+class CountryPicker extends StatefulWidget {
   final ValueChanged<CountrySelection> onCountrySelected;
   final Country? initialCountry;
   final VoidCallback? onDialogOpen;
@@ -14,7 +14,7 @@ class CountryCodePicker extends StatefulWidget {
   final TextStyle? textStyle;
   final double? height;
 
-  const CountryCodePicker({
+  const CountryPicker({
     Key? key,
     required this.onCountrySelected,
     this.initialCountry,
@@ -28,10 +28,10 @@ class CountryCodePicker extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  State<CountryCodePicker> createState() => _CountryCodePickerState();
+  State<CountryPicker> createState() => _CountryPickerState();
 }
 
-class _CountryCodePickerState extends State<CountryCodePicker> {
+class _CountryPickerState extends State<CountryPicker> {
   late Country selectedCountry;
 
   @override

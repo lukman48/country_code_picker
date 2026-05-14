@@ -1,4 +1,4 @@
-# country_code_picker
+# country_picker
 
 A beautiful, efficient Flutter widget for selecting country codes with Material 3 design, smooth animations, and excellent UX. Perfect for phone number input forms.
 
@@ -21,7 +21,7 @@ Add to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  country_code_picker: ^1.0.0
+  country_picker: ^1.0.0
 ```
 
 Then run:
@@ -32,9 +32,9 @@ flutter pub get
 ## 🚀 Quick Start
 
 ```dart
-import 'package:country_code_picker/country_code_picker.dart';
+import 'package:country_picker/country_picker.dart';
 
-CountryCodePicker(
+CountryPicker(
   onCountrySelected: (country) {
     print('Selected: ${country.country.name}');
     print('Dial Code: ${country.country.dialCode}');
@@ -55,7 +55,7 @@ CountryCodePicker(
 ### Basic Usage
 
 ```dart
-CountryCodePicker(
+CountryPicker(
   onCountrySelected: (selection) {
     setState(() {
       selectedCountry = selection.country;
@@ -67,7 +67,7 @@ CountryCodePicker(
 ### With Customization
 
 ```dart
-CountryCodePicker(
+CountryPicker(
   onCountrySelected: (selection) {
     // Handle selection
   },
@@ -101,7 +101,7 @@ class _PhoneInputFormState extends State<PhoneInputForm> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        CountryCodePicker(
+        CountryPicker(
           onCountrySelected: (selection) {
             setState(() => selectedCountry = selection.country);
           },
@@ -155,7 +155,7 @@ final regions = countryList.regions;
 ### Custom Styling
 
 ```dart
-CountryCodePicker(
+CountryPicker(
   onCountrySelected: (selection) {},
   primaryColor: Colors.deepPurple,
   textStyle: TextStyle(
@@ -188,7 +188,7 @@ The package includes 250+ countries and territories:
 
 ## 🔧 API Reference
 
-### CountryCodePicker Widget
+### CountryPicker Widget
 
 #### Constructor Parameters
 
@@ -346,9 +346,9 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 ## 🔗 Resources
 
-- [GitHub Repository](https://github.com/lukman48/country_code_picker)
-- [pub.dev Package](https://pub.dev/packages/country_code_picker)
-- [Issue Tracker](https://github.com/lukman48/country_code_picker/issues)
+- [GitHub Repository](https://github.com/lukman48/country_picker)
+- [pub.dev Package](https://pub.dev/packages/country_picker)
+- [Issue Tracker](https://github.com/lukman48/country_picker/issues)
 
 ## 💡 Tips & Tricks
 
@@ -363,7 +363,7 @@ final position = await Geolocator.getCurrentPosition();
 final countryCode = await getCountryCodeFromIP();
 final initialCountry = countryList.byCode(countryCode);
 
-CountryCodePicker(
+CountryPicker(
   onCountrySelected: (_) {},
   initialCountry: initialCountry,
 )

@@ -1,6 +1,6 @@
-# Examples - country_code_picker
+# Examples - country_picker
 
-Complete examples showing how to use the country_code_picker package in real-world scenarios.
+Complete examples showing how to use the country_picker package in real-world scenarios.
 
 ## 📱 Basic Usage
 
@@ -8,7 +8,7 @@ Complete examples showing how to use the country_code_picker package in real-wor
 
 ```dart
 import 'package:flutter/material.dart';
-import 'package:country_code_picker/country_code_picker.dart';
+import 'package:country_picker/country_picker.dart';
 
 void main() {
   runApp(const MyApp());
@@ -61,7 +61,7 @@ class _CountryPickerExampleState extends State<CountryPickerExample> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              CountryCodePicker(
+              CountryPicker(
                 onCountrySelected: (selection) {
                   setState(() {
                     selectedCountry = selection.country;
@@ -106,7 +106,7 @@ class _CountryPickerExampleState extends State<CountryPickerExample> {
 
 ```dart
 import 'package:flutter/material.dart';
-import 'package:country_code_picker/country_code_picker.dart';
+import 'package:country_picker/country_picker.dart';
 
 class PhoneInputForm extends StatefulWidget {
   const PhoneInputForm({Key? key}) : super(key: key);
@@ -168,7 +168,7 @@ class _PhoneInputFormState extends State<PhoneInputForm> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               // Country picker
-              CountryCodePicker(
+              CountryPicker(
                 onCountrySelected: (selection) {
                   setState(() => selectedCountry = selection.country);
                 },
@@ -223,7 +223,7 @@ class _PhoneInputFormState extends State<PhoneInputForm> {
 
 ```dart
 import 'package:flutter/material.dart';
-import 'package:country_code_picker/country_code_picker.dart';
+import 'package:country_picker/country_picker.dart';
 
 class ThemedCountryPicker extends StatefulWidget {
   const ThemedCountryPicker({Key? key}) : super(key: key);
@@ -269,7 +269,7 @@ class _ThemedCountryPickerState extends State<ThemedCountryPicker> {
               Card(
                 child: Padding(
                   padding: const EdgeInsets.all(16.0),
-                  child: CountryCodePicker(
+                  child: CountryPicker(
                     onCountrySelected: (selection) {
                       setState(() => selectedCountry = selection.country);
                     },
@@ -303,7 +303,7 @@ class _ThemedCountryPickerState extends State<ThemedCountryPicker> {
 
 ```dart
 import 'package:flutter/material.dart';
-import 'package:country_code_picker/country_code_picker.dart';
+import 'package:country_picker/country_picker.dart';
 
 class SearchExample extends StatefulWidget {
   const SearchExample({Key? key}) : super(key: key);
@@ -417,7 +417,7 @@ class _SearchExampleState extends State<SearchExample> {
 
 ```dart
 import 'package:flutter/material.dart';
-import 'package:country_code_picker/country_code_picker.dart';
+import 'package:country_picker/country_picker.dart';
 
 class RegionFilterExample extends StatefulWidget {
   const RegionFilterExample({Key? key}) : super(key: key);
@@ -507,7 +507,7 @@ class _RegionFilterExampleState extends State<RegionFilterExample> {
 
 ```dart
 import 'package:flutter/material.dart';
-import 'package:country_code_picker/country_code_picker.dart';
+import 'package:country_picker/country_picker.dart';
 
 void main() {
   runApp(const CompleteExampleApp());
@@ -586,7 +586,7 @@ class _CompleteExampleState extends State<CompleteExample> {
               const SizedBox(height: 16),
 
               // Country picker
-              CountryCodePicker(
+              CountryPicker(
                 onCountrySelected: handleCountrySelection,
                 initialCountry: selectedCountry,
                 primaryColor: Colors.blue,
@@ -722,7 +722,7 @@ class _CompleteExampleState extends State<CompleteExample> {
 final localeCountryCode = Localizations.localeOf(context).countryCode;
 final userCountry = countryList.byCode(localeCountryCode ?? 'US');
 
-CountryCodePicker(
+CountryPicker(
   initialCountry: userCountry,
   onCountrySelected: (selection) { },
 )
@@ -750,7 +750,7 @@ if (country != null) {
 
 ### 4. Custom Callbacks
 ```dart
-CountryCodePicker(
+CountryPicker(
   onCountrySelected: (selection) {
     print('Selected: ${selection.country.name}');
     print('At: ${selection.selectedAt}');
@@ -766,8 +766,8 @@ CountryCodePicker(
 
 - [Main Package Documentation](README.md)
 - [API Reference](docs/API.md)
-- [GitHub Repository](https://github.com/lukman48/country_code_picker)
-- [pub.dev Package](https://pub.dev/packages/country_code_picker)
+- [GitHub Repository](https://github.com/lukman48/country_picker)
+- [pub.dev Package](https://pub.dev/packages/country_picker)
 
 ---
 
@@ -776,7 +776,7 @@ CountryCodePicker(
 Add to your `pubspec.yaml`:
 ```yaml
 dependencies:
-  country_code_picker: ^1.0.0
+  country_picker: ^1.0.0
 ```
 
 Then start using it in your app! Happy coding! 🚀
