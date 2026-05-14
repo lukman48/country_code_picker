@@ -1,0 +1,20 @@
+name: country_code_picker
+description: A beautiful, efficient Flutter widget for selecting country codes with Material 3 design, smooth animations, and excellent UX. Features 250+ countries, search, favorites, and dark mode support.
+version: 1.0.0
+homepage: https://github.com/lukman48/country_code_picker
+repository: https://github.com/lukman48/country_code_picker
+issue_tracker: https://github.com/lukman48/country_code_picker/issues
+documentation: https://github.com/lukman48/country_code_picker/wiki
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: '>=3.10.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
