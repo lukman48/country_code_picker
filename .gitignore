@@ -1,0 +1,36 @@
+# Flutter
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+*.packages
+pubspec.lock
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Build
+build/
+.gradle/
+*.apk
+*.aab
+
+# Dependencies
+/packages/
+
+# Environment
+.env
+.env.local
+
+# OS
+Thumbs.db
+
+# IDE specific
+*.iml
+*.iws
+*.ipr
